@@ -2,33 +2,35 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: lightblue
-    }
-
-    .topNav {
-        height: 38vh;
-        /* width: 40vw; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        /* background-color: aquamarine; */
-    }
-    .bannerImg {
-        /* background-color: blanchedalmond; */
-        height: 35vh;
-        width: 90vw;
-        border: solid lightcoral 8px;
-        border-radius: 30px;
-    }
-
-
-    /* Div separator  */
-.upperMainBody {
-display: flex;
-justify-content: space-evenly
-/* gap: 50px; */
+    background-color: lightblue;
 }
+
+.topNav {
+    height: 38vh;
+    /* width: 40vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: aquamarine; */
+}
+
+.bannerImg {
+    /* background-color: blanchedalmond; */
+    height: 35vh;
+    width: 90vw;
+    border: solid lightcoral 8px;
+    border-radius: 30px;
+}
+
+
+/* Div separator  */
+.upperMainBody {
+    display: flex;
+    justify-content: space-evenly
+        /* gap: 50px; */
+}
+
 .logoImg {
     height: 20vh;
     border: solid lightcoral 3px;
@@ -65,6 +67,9 @@ justify-content: space-evenly
     border-color: transparent black transparent transparent;
 }
 
+/* Div separate */
+
+
 
 .imgRotationBox {
     /* background-color: aquamarine; */
@@ -79,30 +84,108 @@ justify-content: space-evenly
 .imageContainer {
     margin-bottom: 10px;
 }
+
 #rotatingImage {
     height: 30vh;
     /* width: 10vw; */
     border: solid lightcoral 5px;
     border-radius: 5px;
 }
+
 #rotateButton {
-    height: 5vh;
+    height: 4vh;
     width: 10vw;
-    border: solid lightcoral 8px;
+    border: solid lightcoral 3px;
     border-radius: 10px;
-    transition: background-color 0.3s;
+    transition: box-shadow 0.3s, background-color 0.3s;
     background-color: white;
+    font-family: fantasy;
+    font-size: 18px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 #rotateButton:hover {
     background-color: whitesmoke;
+    box-shadow: 0 0 20px lightcoral;
 }
 
 
-    /* Div separate */
 
+
+/* Div separate */
 #twitch-embed {
     border: solid lightcoral 8px;
     border-radius: 10px;
     display: flex;
+}
+
+
+
+
+/* Div separate */
+.titleBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigTitle {
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    border: solid lightcoral 3px;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #ff6b6b, #b300b3);
+    color: white;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Text shadow for emphasis */
+}
+
+
+.onePieceImgLeft,
+.onePieceImgRight {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.onePieceImgLeft img,
+.onePieceImgRight img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: rotateAndFade 8s infinite;
+    border: solid lightcoral 6px;
+}
+
+@keyframes rotateAndFade {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    25% {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+
+    75% {
+        transform: rotate(270deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
 }

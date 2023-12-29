@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: lightblue
+    }
+
+    .topNav {
+        height: 38vh;
+        /* width: 40vw; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* background-color: aquamarine; */
+    }
+    .bannerImg {
+        /* background-color: blanchedalmond; */
+        height: 35vh;
+        width: 70vw;
+        border: solid black 3px;
+        border-radius: 30px;
+    }
+
+
+    /* Div separator  */
+.upperMainBody {
+display: flex;
+justify-content: space-around;
+}
+.logoImg {
+    height: 20vh;
+    border: solid black 3px;
+    border-radius: 20px;
+}
+
+.logoBox {
+    position: relative;
+}
+
+.logoImg {
+    /* display: block; */
+    /* max-width: 100%; */
+}
+
+.ribbon {
+    position: absolute;
+    top: 40px;
+    left: -30px;
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 20px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.ribbon::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 0 10px 10px 0;
+    border-color: transparent black transparent transparent;
+}

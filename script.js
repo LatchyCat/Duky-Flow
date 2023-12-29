@@ -25,3 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
         rotatingImage.src = randomImage;
     }
 });
+
+
+
+
+    function redirectTo(url) {
+        window.location.href = url;
+    };
